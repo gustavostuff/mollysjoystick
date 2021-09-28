@@ -1,0 +1,101 @@
+/* Global styles */
+
+:root {
+  --bg-color: rgb(230, 230, 230);
+  --fg-color: rgb(40, 40, 40);
+  /* Colors */
+  --pink-color: rgb(192, 105, 192);
+  --red-color: rgb(214, 72, 72);
+  --purple-color: rgb(106, 90, 205);
+  --blue-color: rgb(0, 136, 204);
+  --green-color: rgb(60, 179, 113);
+}
+
+body {
+  padding: 1rem;
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.centered {
+  text-align: center;
+}
+
+.responsive-img {
+  width: 100%;
+}
+
+/* Responsive stuff  */
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding-bottom: 10rem;
+  justify-items: center;
+}
+
+.section * {
+  grid-column: 1;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  .section {
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 10rem;
+    justify-items: left;
+  }
+
+  .section * {
+    grid-column: 2 / 4;
+    text-align: left;
+  }
+}
+
+/* End of responsive stuff */
+
+.title-word {
+  animation: fade-in linear 2s;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+}
+
+.title-word.hidden {
+  display: none;
+}
+
+#section-1 {
+  background:  var(--bg-color)
+}
+
+/* Coloring fot header line */
+
+.pink {
+  color: var(--pink-color);
+}
+
+.red {
+  color: var(--red-color);
+}
+
+.purple {
+  color: var(--purple-color);
+}
+
+.blue {
+  color: var(--blue-color);
+}
+
+.green {
+  color: var(--green-color);
+}
