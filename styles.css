@@ -58,14 +58,14 @@ body {
 /* End of responsive stuff */
 
 .title-word {
-  animation: fade-in linear 2s;
+  animation: fade-in linear 2.5s;
 }
 
 @keyframes fade-in {
     0% {
       opacity: 0;
     }
-    50% {
+    40% {
       opacity: 1;
     }
 }
