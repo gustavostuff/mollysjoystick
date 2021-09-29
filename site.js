@@ -13,5 +13,5 @@
 
 		let nextWord = geWordItem(wordIndex);
 		nextWord.classList.remove('hidden');
-	}, 2000);
+	}, 3000);
 })();

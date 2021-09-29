@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="450mm"
-   height="450mm"
-   viewBox="0 0 450 450"
+   width="298mm"
+   height="402mm"
+   viewBox="0 0 298 402"
    version="1.1"
    id="svg94"
    inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
-   sodipodi:docname="company-logo-v11-under-cc-4.0-non-commercial.svg"
+   sodipodi:docname="company-logo-final-under-cc-4.0-nc.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -41,11 +41,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="0.5"
-     inkscape:cx="775"
-     inkscape:cy="683"
-     inkscape:window-width="1920"
-     inkscape:window-height="1015"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="448.3057"
+     inkscape:cy="1257.2359"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -2129,7 +2129,7 @@
     <color-profile
        name="Best-RGB"
        xlink:href="file:///usr/share/color/icc/colord/BestRGB.icc"
-       id="color-profile1110" />
+       id="color-profile1425" />
     <inkscape:path-effect
        effect="fillet_chamfer"
        id="path-effect2226"
@@ -2651,41 +2651,40 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       id="g1332"
-       transform="translate(-7.9980006,-1.2129929)">
+       id="g1298">
       <path
-         id="rect12913"
-         style="fill:#0088cc;fill-opacity:1;stroke-width:2.12132"
-         d="m 290.27058,154.86508 c -29.3769,14.68848 -58.7544,29.37665 -88.13356,44.064 l -3e-4,69.0709 c 6e-4,6.904 -11.1932,12.5008 -25.0011,12.5005 -13.8079,3e-4 -25.0016,-5.5966 -25.001,-12.5005 -0.002,-21.76121 5.1e-4,-22.30922 0.006,-44.07043 -29.38023,14.69024 -58.760802,29.38032 -88.141305,44.07043 l 36.000681,76.00001 77.137084,15.92387 c 37.71237,-18.85618 75.42473,-37.71236 113.13709,-56.56854 l 113.13482,-70.71133 10e-4,-21.21421 C 365.6959,192.57534 327.98679,173.7184 290.27045,154.86508 Z"
-         sodipodi:nodetypes="cccccccccscccc" />
+         id="rect2609"
+         style="fill:#0088cc;stroke-width:0.707107;stroke-linecap:round;paint-order:stroke fill markers"
+         d="m 7.9999482,240.00002 141.4164018,155.56313 141.42376,-70.70813 0.004,-84.85313 -28.28618,-14.14309 -14.14115,7.07177 -14.14213,-7.07106 -0.003,-14.14016 -28.2825,-14.145 -14.14108,7.07195 -14.14213,-7.07106 c 0.001,16.49895 6.3e-4,40.06894 6.3e-4,56.56787 7e-5,7.81483 -12.6565,14.1504 -28.28646,14.1503 -15.62968,-4e-5 -28.28243,-6.33377 -28.28279,-14.14847 3.6e-4,-16.49952 0.002,-40.07018 7e-5,-56.5697 l -14.14213,7.07106 -14.143268,-7.07191 -28.286181,14.14309 0.003,14.14203 -14.142136,7.07106 -14.143408,-7.07184 z"
+         sodipodi:nodetypes="ccccccccccccsccccccccc" />
       <path
          style="fill:#004466;fill-opacity:1;stroke:none;stroke-width:1.87088px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 63.998,289.21299 -2.5e-5,91.92389 113.137205,56.5685 226.2741,-113.1371 -2.9e-4,-91.92429 -28.28202,14.1428 v -21.21321 l -28.28427,14.14214 v 21.2132 l -28.28427,14.14214 v -21.21321 l -28.28427,14.14214 -9.7e-4,21.21312 -28.28403,14.14216 7.3e-4,-21.21315 -28.28427,14.14214 -4.8e-4,21.21316 -28.28403,14.14216 2.4e-4,-21.21319 -28.28427,14.14214 v 21.2132 L 148.85281,331.6396 v -21.21321 l -28.28427,-14.14213 v 21.2132 L 92.284271,303.35533 V 282.14212 L 64,267.99999 Z"
-         id="path21522"
-         sodipodi:nodetypes="ccccccccccccccccccccccccccccc" />
+         d="m 7.9959177,240.00203 v 84.85281 l 141.4215023,70.71082 1.4e-4,-84.85295 -28.28435,-14.14217 0.004,14.14175 -28.284338,-14.14211 -0.004,-14.14178 -28.284201,-14.1421 0.004,14.14171 -28.2842,-14.1421 -0.004,-14.14178 z"
+         id="path2686"
+         sodipodi:nodetypes="ccccccccccccc" />
+      <circle
+         style="fill:#0088cc;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;paint-order:stroke fill markers"
+         id="path4443"
+         cx="43.924847"
+         cy="167.37849"
+         transform="rotate(-45.000004)"
+         r="79.999992" />
       <path
-         id="path22619"
-         style="fill:#004466;fill-opacity:1;stroke-width:2.12132"
-         d="m 290.27218,186.43118 c 27.6142,0 50,11.1973 50,25.0044 0,13.8071 -22.3857,24.9955 -49.9999,24.9957 -27.6141,-10e-5 -50,-11.1886 -50,-24.9957 0,-13.8071 22.3857,-25.0044 49.9999,-25.0044 z"
-         sodipodi:nodetypes="sssss" />
+         style="fill:#004466;fill-opacity:1;stroke:none;stroke-width:1.87088px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 64.568632,211.71737 7.1e-5,14.1421 28.284271,14.14214 -7.1e-5,-14.1421 z"
+         id="path8599" />
       <path
-         id="rect23505"
-         style="fill:#004466;fill-opacity:1;stroke-width:3"
-         d="m 240.27518,190.21558 h 100 v 21.22 h -100 z"
-         sodipodi:nodetypes="ccccc" />
+         style="fill:#004466;fill-opacity:1;stroke:none;stroke-width:1.87088px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 177.70572,211.71737 7e-5,14.1421 28.28427,14.14214 -7e-5,-14.1421 z"
+         id="path8599-5" />
       <path
-         id="path22619-5"
-         style="fill:#0088cc;fill-opacity:1;stroke-width:2.12132"
-         d="m 290.27218,165.21798 c 27.6142,0 50.003,11.1929 50.003,25 0,13.8071 -22.3887,24.9999 -50.0029,24.9999 -27.6142,0 -49.9971,-11.1952 -49.9971,-25.0023 0,-13.8071 22.3828,-24.9976 49.997,-24.9976 z"
-         sodipodi:nodetypes="sssss" />
-      <ellipse
-         style="fill:#0088cc;fill-opacity:1;stroke-width:3"
-         id="path1983-6"
-         cx="54.744656"
-         cy="195.76411"
-         transform="rotate(-45)"
-         rx="79.999992"
-         ry="80" />
+         style="fill:#004466;fill-opacity:1;stroke:none;stroke-width:1.87088px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 234.27419,240.00168 7e-5,14.1421 28.28427,14.14213 -7e-5,-14.1421 z"
+         id="path8599-3" />
+      <path
+         style="fill:#004466;fill-opacity:1;stroke:none;stroke-width:1.87088px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 177.70565,268.28595 7e-5,14.1421 28.28427,14.14213 -7e-5,-14.1421 z"
+         id="path8599-56" />
     </g>
   </g>
   <g
@@ -2698,24 +2697,7 @@
       <cc:Work
          rdf:about="">
         <dc:title>Micro Joystick (product name pending)</dc:title>
-        <cc:license
-           rdf:resource="http://creativecommons.org/licenses/by-nc/4.0/" />
       </cc:Work>
-      <cc:License
-         rdf:about="http://creativecommons.org/licenses/by-nc/4.0/">
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Reproduction" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#Distribution" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Notice" />
-        <cc:requires
-           rdf:resource="http://creativecommons.org/ns#Attribution" />
-        <cc:prohibits
-           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
-        <cc:permits
-           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
-      </cc:License>
     </rdf:RDF>
   </metadata>
 </svg>

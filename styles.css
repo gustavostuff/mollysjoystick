@@ -3,21 +3,25 @@
 :root {
   --bg-color: rgb(230, 230, 230);
   --fg-color: rgb(40, 40, 40);
-  /* Colors */
   --pink-color: rgb(192, 105, 192);
   --red-color: rgb(214, 72, 72);
+  --orange-color: rgb(255, 127, 0);
   --purple-color: rgb(106, 90, 205);
   --blue-color: rgb(0, 136, 204);
   --green-color: rgb(60, 179, 113);
 }
 
 body {
-  padding: 1rem;
+  padding: 0;
   margin: 0;
   background-color: var(--bg-color);
   color: var(--fg-color);
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
+}
+
+.container {
+  padding: 0 1rem 1rem 1rem;
 }
 
 .centered {
@@ -58,14 +62,14 @@ body {
 /* End of responsive stuff */
 
 .title-word {
-  animation: fade-in linear 2s;
+  animation: fade-in linear 3s;
 }
 
 @keyframes fade-in {
     0% {
       opacity: 0;
     }
-    50% {
+    40% {
       opacity: 1;
     }
 }
@@ -78,7 +82,15 @@ body {
   background:  var(--bg-color)
 }
 
+#footer {
+  background:  var(--fg-color)
+}
+
 /* Coloring fot header line */
+
+.white-text {
+  color: var(--bg-color);
+}
 
 .pink {
   color: var(--pink-color);
@@ -98,4 +110,22 @@ body {
 
 .green {
   color: var(--green-color);
+}
+
+.warning-banner {
+  background-color: var(--orange-color);
+}
+
+/* Helper classes */
+
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.p-1 {
+  padding: 1rem;
 }
