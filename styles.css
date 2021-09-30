@@ -88,7 +88,7 @@ body {
 
 /* Coloring fot header line */
 
-.white-text {
+.white {
   color: var(--bg-color);
 }
 
