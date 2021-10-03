@@ -29,6 +29,10 @@ body {
   text-align: center;
 }
 
+.no-bullets {
+  list-style-type: none;
+}
+
 .responsive-img {
   width: 100%;
 }
