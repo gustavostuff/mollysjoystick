@@ -42,13 +42,13 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="1.15"
-     inkscape:cx="276.52174"
-     inkscape:cy="336.08696"
-     inkscape:window-width="1369"
-     inkscape:window-height="847"
-     inkscape:window-x="71"
-     inkscape:window-y="25"
-     inkscape:window-maximized="1"
+     inkscape:cx="623.91304"
+     inkscape:cy="-81.304348"
+     inkscape:window-width="1312"
+     inkscape:window-height="747"
+     inkscape:window-x="1573"
+     inkscape:window-y="228"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
      width="300mm"
      height="186mm"
@@ -1585,7 +1585,7 @@
     <color-profile
        name="Best-RGB"
        xlink:href="file:///usr/share/color/icc/colord/BestRGB.icc"
-       id="color-profile1198" />
+       id="color-profile1170" />
     <inkscape:path-effect
        effect="fillet_chamfer"
        id="path-effect1854"
@@ -1955,7 +1955,8 @@
      id="layer1"
      style="display:inline">
     <g
-       id="g1248">
+       id="g1248"
+       transform="translate(0,2.8)">
       <path
          id="path23715-2-9-2-4"
          style="display:inline;fill:none;stroke:#0088cc;stroke-width:0.5"
@@ -2046,7 +2047,7 @@
          d="m 223.15,146.15001 a 1.9999999,1.9999999 0 0 1 -2,2 1.9999999,1.9999999 0 0 1 -2,-2 1.9999999,1.9999999 0 0 1 2,-2 1.9999999,1.9999999 0 0 1 2,2 z" />
       <path
          id="rect4088-2"
-         d="m 216.14999,95.150002 h 55 a 1,1 45 0 1 1,1 V 151.15 a 1,1 135 0 1 -1,1 l -55,0 a 1,1 45 0 1 -1,-1 l 0,-54.999998 a 1,1 135 0 1 1,-1 z"
+         d="m 216.14999,95.150002 h 55 a 1,1 45 0 1 1,1 V 151.15 a 1,1 135 0 1 -1,1 h -55 a 1,1 45 0 1 -1,-1 V 96.150002 a 1,1 135 0 1 1,-1 z"
          style="display:inline;fill:none;fill-opacity:0.489879;stroke:#0088cc;stroke-width:0.5;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" />
       <path
          id="path9721-82-78-47"
@@ -2179,7 +2180,7 @@
       <path
          id="rect205"
          style="fill:none;fill-opacity:1;stroke:#0088cc;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 6.15,1.15 176,0 a 5,5 45 0 1 5,5 l 0,71 c 0,2.761424 -2.23024,5.193148 -4.98255,5.41732 C 123.45236,87.349588 64.77415,87.338991 6.1325822,82.566931 3.380259,82.342956 1.15,79.911424 1.15,77.15 l 0,-71 a 5,5 135 0 1 5,-5 z"
+         d="m 6.15,1.15 h 176 a 5,5 45 0 1 5,5 v 71 c 0,2.761424 -2.23024,5.193148 -4.98255,5.41732 C 123.45236,87.349588 64.77415,87.338991 6.1325822,82.566931 3.380259,82.342956 1.15,79.911424 1.15,77.15 v -71 a 5,5 135 0 1 5,-5 z"
          sodipodi:nodetypes="ccccc" />
     </g>
   </g>
