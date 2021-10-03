@@ -41,14 +41,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="0.75660425"
-     inkscape:cx="305.31153"
-     inkscape:cy="377.3439"
-     inkscape:window-width="1369"
-     inkscape:window-height="847"
-     inkscape:window-x="71"
-     inkscape:window-y="25"
-     inkscape:window-maximized="1"
+     inkscape:zoom="0.54"
+     inkscape:cx="412.03704"
+     inkscape:cy="462.03704"
+     inkscape:window-width="1312"
+     inkscape:window-height="747"
+     inkscape:window-x="1763"
+     inkscape:window-y="202"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1"
      width="300mm"
      height="199mm">
@@ -1873,7 +1873,7 @@
     <color-profile
        name="Best-RGB"
        xlink:href="file:///usr/share/color/icc/colord/BestRGB.icc"
-       id="color-profile1271" />
+       id="color-profile1305" />
     <inkscape:path-effect
        effect="fillet_chamfer"
        id="path-effect2226"
