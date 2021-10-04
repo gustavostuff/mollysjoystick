@@ -65,12 +65,11 @@ body {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   padding-bottom: 5rem;
-  justify-items: center;
+  justify-items: left;
 }
 
 .section * {
   grid-column: 1;
-  text-align: center;
 }
 
 @media (min-width: 900px) {
@@ -82,7 +81,6 @@ body {
 
   .section * {
     grid-column: 2 / 4;
-    text-align: left;
   }
 
   .header {
@@ -98,20 +96,22 @@ body {
 
 .slider {
   display: flex;
-  overflow-x: auto;
+  overflow: hidden;
   -webkit-overfow-scrolling: touch;
   scroll-snap-type: mandatory;
 }
 
-.slider > img {
-  text-align: center;
+.slider > img.moving-left {
   flex-shrink: 0;
+  animation: move-left linear 15s forwards;
 }
 
-/* Other */
+/* Animation stuff */
 
-.title-word {
-  animation: fade-in linear 3s;
+@keyframes move-left {
+  100% {
+    transform: translateX(-800%);
+  }
 }
 
 @keyframes fade-in {
@@ -121,6 +121,12 @@ body {
     40% {
       opacity: 1;
     }
+}
+
+/* Other */
+
+.title-word {
+  animation: fade-in linear 1s;
 }
 
 .title-word.hidden {
