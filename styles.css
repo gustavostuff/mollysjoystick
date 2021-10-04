@@ -2,6 +2,7 @@
 
 :root {
   --bg-color: rgb(230, 230, 230);
+  --secondary-bg-color: rgb(255, 255, 255);
   --fg-color: rgb(40, 40, 40);
   --pink-color: rgb(192, 105, 192);
   --red-color: rgb(214, 72, 72);
@@ -21,6 +22,15 @@ body {
   box-sizing: border-box;
 }
 
+.bg-logo {
+  width: 30%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  opacity: 0.25;
+  z-index: -10;
+}
+
 .container {
   padding: 0 1rem 1rem 1rem;
 }
@@ -35,6 +45,18 @@ body {
 
 .responsive-img {
   width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /*background-color: var(--secondary-bg-color);*/
+}
+
+.header .links a {
+  color: var(--blue-color);
+  text-decoration: none;
 }
 
 /* Responsive stuff  */
@@ -62,9 +84,31 @@ body {
     grid-column: 2 / 4;
     text-align: left;
   }
+
+  .header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 /* End of responsive stuff */
+
+/* Slider */
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overfow-scrolling: touch;
+  scroll-snap-type: mandatory;
+}
+
+.slider > img {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Other */
 
 .title-word {
   animation: fade-in linear 3s;
@@ -81,10 +125,6 @@ body {
 
 .title-word.hidden {
   display: none;
-}
-
-#section-1 {
-  background:  var(--bg-color)
 }
 
 #footer {
@@ -125,7 +165,13 @@ body {
 
 .m-0  { margin: 0; }
 .m-1  { margin: 1rem; }
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mb-3 { margin-bottom: 3rem; }
 .mt-1 { margin-top: 1rem; }
 .p-0  { padding: 0; }
 .p-1  { padding: 1rem; }
 .pt-1 { padding-top: 1rem ; }
+.pb-1 { padding-bottom: 1rem ; }
