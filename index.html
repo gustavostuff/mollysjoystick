@@ -4,11 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" />
+  <link rel="stylesheet" href="lib/zhlider/zhlider.css" />
   <link rel="stylesheet" href="styles.css" />
   <title></title>
 </head>
 <body>
+  <!--
   <img class="bg-logo mx-1" src="img/company-logo-final-under-cc-4.0-nc.svg" alt="Background logo" />
+  -->
   <div>
     <h3 class="centered warning-banner m-0">
       &#9888; This is an experiment, nothing at sale yet.
@@ -26,14 +29,13 @@
   </div>
   <div class="container">
     <div class="section">
-      <h3 class="red">New addition, Femto size with color key caps!</h2>
       <h3 class=" m-0">The</h3>
       <div class="words-list">
-        <h3 class="title-word pink m-0">Cutest</h3>
-        <h3 class="title-word hidden red m-0">Toughest</h3>
-        <h3 class="title-word hidden purple m-0">Petit</h3>
-        <h3 class="title-word hidden blue m-0">High-End</h3>
-        <h3 class="title-word hidden green m-0">Collectable</h3>
+        <h3 class="fade-in-word pink m-0">Cutest</h3>
+        <h3 class="fade-in-word hidden red m-0">Toughest</h3>
+        <h3 class="fade-in-word hidden purple m-0">Petit</h3>
+        <h3 class="fade-in-word hidden blue m-0">High-End</h3>
+        <h3 class="fade-in-word hidden green m-0">Collectable</h3>
       </div>
       <h3 class=" m-0">DIY USB Arcade joystick</h3>
       <p>
@@ -47,32 +49,36 @@
         Rainbow, Iceberg and Dragon are the 3 current <i>flavors</i>. The acrylic part serving as wrist rest is completely optional, the sets can be assembled with or without it. Check out the following renders for the <i>Micro</i> size.</p>
         <!--
         -->
-        <div class="slider micro">
-          <img src="img/renders_jpg/rainbow_cool_angle.jpg" class="responsive-img" alt="Rainbow flavor, cool angle" />
-          <img src="img/renders_jpg/rainbow_side.jpg" class="responsive-img" alt="Rainbow flavor, side view" />
-          <img src="img/renders_jpg/rainbow_top.jpg" class="responsive-img" alt="Rainbow flavor, top view" />
-          <img src="img/renders_jpg/iceberg_cool_angle.jpg" class="responsive-img" alt="Iceberg flavor, cool angle" />
-          <img src="img/renders_jpg/iceberg_side.jpg" class="responsive-img" alt="Iceberg flavor, side view" />
-          <img src="img/renders_jpg/iceberg_top.jpg" class="responsive-img" alt="Iceberg flavor, top view" />
-          <img src="img/renders_jpg/dragon_cool_angle.jpg" class="responsive-img" alt="Dragon flavor, cool angle" />
-          <img src="img/renders_jpg/dragon_side.jpg" class="responsive-img" alt="Dragon flavor, side view" />
-          <img src="img/renders_jpg/dragon_top.jpg" class="responsive-img" alt="Dragon flavor, top view" />
+        <div class="zhlider" id="slider-renders">
+          <img src="img/renders_jpg/a.jpg" class="responsive-img" alt="Rainbow flavor, cool angle" />
+          <img src="img/renders_jpg/b.jpg" class="responsive-img" alt="Rainbow flavor, side view" />
+          <img src="img/renders_jpg/c.jpg" class="responsive-img" alt="Rainbow flavor, top view" />
+          <img src="img/renders_jpg/d.jpg" class="responsive-img" alt="Iceberg flavor, cool angle" />
+          <img src="img/renders_jpg/e.jpg" class="responsive-img" alt="Iceberg flavor, side view" />
+          <img src="img/renders_jpg/f.jpg" class="responsive-img" alt="Iceberg flavor, top view" />
+          <img src="img/renders_jpg/g.jpg" class="responsive-img" alt="Dragon flavor, cool angle" />
+          <img src="img/renders_jpg/h.jpg" class="responsive-img" alt="Dragon flavor, side view" />
+          <img src="img/renders_jpg/i.jpg" class="responsive-img" alt="Dragon flavor, top view" />
         </div>
         <!--
+          <button id="debug-btn">Stop carousel</button>
         -->
       <p>Not small enough you say? Try the <i>Nano</i> size! We don't have renders for it yet but you can kind of see the relative size down below.</p>
     </div>
   
     <div class="section">
-      <div class="centered">
-        <h3>3mm, laser cut acrylic parts</h3>
+      <h3>Laser-cut, 3mm thick acrylic parts</h3>
+      <div class="zhlider" id="slider-svgs">
         <img src="img/micro-joystick-a-under-cc-4.0-nc.svg" class="responsive-img" alt="Micro Model svg diagram" />
         <img src="img/nano-joystick-a-under-cc.4.0-nc.svg" class="responsive-img" alt="Nano Model svg diagram" />
       </div>
+      <p class="links">
+        SVG files are free to use under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC 4.0 NC</a>, get them <a href="https://raw.githubusercontent.com/tavuntu/mollysjoystick/main/assets/svg_files.zip">here</a>.
+      </p>
     </div>
 
-    <div class="section">
-      <p>We also sell the case alone so, if you're thinking in something more custom-made like different colors, sanwa-like parts or anything, then this may be useful! The pack includes:
+    <div class="section" id="my-slider">
+      <p>We also sell the case alone so, if you're thinking in something more custom-made like different colors, sanwa-like parts, a Raspberry Pi setup or anything, then this may be useful! The pack includes:
         <ul class="no-bullets p-0">
           <li>Acrylic parts</li>
           <li>Screws</li>
@@ -82,11 +88,19 @@
       </p>
       <img src="img/renders_jpg/case_only.jpg" class="responsive-img" alt="Case only" />
     </div>
+    <div class="section">
+      <h3 class="red">New addition, <i>Femto</i> size with color key caps! (WIP)</h2>
+    </div>
   </div>
   <div class="section p-1" id="footer">
     <img src="img/company-logo-final-monochrome-under-cc-4.0-nc.svg" width="80" />
-    <p class="white">Hermosillo, Sonora. Mexico. All content in this page is property of the author and all resources (logos, images and texts) are under <a class="white" href="https://creativecommons.org/licenses/by-nc/4.0/deed.es">Creative Commons 4.0 NC</a> </p>
+    <p class="white">Hermosillo, Sonora. Mexico. All content in this page is property of the author and all resources (logos, images and texts) are under <a class="white" href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons 4.0 NC</a> </p>
   </div>
   <script src="site.js"></script>
+  <script src="lib/zhlider/zhlider.js"></script>
+  <script type="text/javascript">
+    zhlider.init('slider-renders');
+    zhlider.init('slider-svgs');
+  </script>
 </body>
 </html>

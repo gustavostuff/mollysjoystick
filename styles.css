@@ -54,7 +54,7 @@ body {
   /*background-color: var(--secondary-bg-color);*/
 }
 
-.header .links a {
+.links a {
   color: var(--blue-color);
   text-decoration: none;
 }
@@ -92,49 +92,30 @@ body {
 
 /* End of responsive stuff */
 
-/* Slider */
-
-.slider {
-  display: flex;
-  overflow: hidden;
-  -webkit-overfow-scrolling: touch;
-  scroll-snap-type: mandatory;
-}
-
-.slider > img.moving-left {
-  flex-shrink: 0;
-  animation: move-left linear 15s forwards;
-}
-
 /* Animation stuff */
 
-@keyframes move-left {
-  100% {
-    transform: translateX(-800%);
-  }
-}
-
-@keyframes fade-in {
+@keyframes fade-in-word {
     0% {
       opacity: 0;
     }
-    40% {
+    10% {
       opacity: 1;
     }
 }
 
-/* Other */
-
-.title-word {
-  animation: fade-in linear 1s;
+.fade-in-word {
+  position: relative;
+  animation: fade-in-word linear 3s;
 }
 
-.title-word.hidden {
+.hidden {
   display: none;
 }
 
+/* Other */
+
 #footer {
-  background:  var(--fg-color)
+  background-color: var(--fg-color);
 }
 
 /* Coloring fot header line */

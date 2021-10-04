@@ -1,0 +1,45 @@
+.zhlider {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  -webkit-overfow-scrolling: touch;
+  scroll-snap-type: mandatory;
+}
+
+/* Animations */
+
+.zhlider > div, .zhlider > img {
+  animation: fade-in-from-left linear 0.3s;
+  position: relative;
+}
+
+.zhlider .fade-in-from-right {
+  animation: fade-in-from-right linear 0.3s;
+  position: relative;
+}
+
+@keyframes fade-in-from-left {
+  0% {
+    opacity: 0;
+    left: 10%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fade-in-from-right {
+  0% {
+    opacity: 0;
+    right: 10%;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+.zh-hidden {
+  display: none;
+}
