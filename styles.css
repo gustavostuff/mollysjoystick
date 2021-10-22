@@ -132,6 +132,10 @@ body {
   color: var(--red-color);
 }
 
+.orange {
+  color: var(--orange-color);
+}
+
 .purple {
   color: var(--purple-color);
 }
