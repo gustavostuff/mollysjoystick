@@ -310,10 +310,6 @@ body::-webkit-scrollbar-thumb {
     flex-direction: row;
   }
 
-  .nav-item.logo {
-    display: none;
-  }
-
   .nav-link {
     justify-content: center;
   }
