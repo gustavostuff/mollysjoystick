@@ -44,6 +44,10 @@ body {
   list-style-type: none;
 }
 
+.fewer-padding-bullets {
+  padding-left: 18px;
+}
+
 .responsive-img {
   width: 100%;
 }
@@ -72,6 +76,10 @@ body {
 .section * {
   grid-column: 1;
 }
+
+/*
+TODO: media queries need a refactor, too much duplicated code
+*/
 
 @media (min-width: 900px) {
   .section {
@@ -151,10 +159,6 @@ body {
 
 .gray {
   color: var(--gray-color);
-}
-
-.hand {
-  cursor: pointer;
 }
 
 /* Helper classes */
