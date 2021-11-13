@@ -13,8 +13,9 @@
 
   // change colored words at the top
   setInterval(() => {
+    let totalWords = document.querySelectorAll('.fade-in-word').length;
     getCurrentWord(wordIndex).classList.add('hidden');
-    wordIndex = ((wordIndex += 1) > 6) ? 1 : wordIndex;
+    wordIndex = ((wordIndex += 1) > totalWords) ? 1 : wordIndex;
     getCurrentWord(wordIndex).classList.remove('hidden');
   }, fadeInDelay);
 
