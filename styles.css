@@ -4,6 +4,7 @@
   --bg-color: rgb(230, 230, 230);
   --secondary-bg-color: rgb(255, 255, 255);
   --fg-color: rgb(40, 40, 40);
+  --fg-color-secondary: rgb(10, 10, 10);
   --pink-color: rgb(192, 105, 192);
   --red-color: rgb(214, 72, 72);
   --orange-color: rgb(255, 127, 0);
@@ -23,6 +24,18 @@ body {
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--blue-color);
+}
+
 .bg-logo {
   width: 30%;
   position: fixed;
@@ -33,7 +46,7 @@ body {
 }
 
 .container {
-  padding: 0 1rem 1rem 1rem;
+  padding: 8rem 1rem 1rem 5rem;
 }
 
 .centered {
@@ -55,8 +68,6 @@ body {
 .header {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  /*background-color: var(--secondary-bg-color);*/
 }
 
 .links a {
@@ -64,11 +75,8 @@ body {
   text-decoration: none;
 }
 
-/* Responsive stuff  */
-
 .section {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   padding-bottom: 5rem;
   justify-items: left;
 }
@@ -76,10 +84,6 @@ body {
 .section * {
   grid-column: 1;
 }
-
-/*
-TODO: media queries need a refactor, too much duplicated code
-*/
 
 @media (min-width: 900px) {
   .section {
@@ -127,7 +131,7 @@ TODO: media queries need a refactor, too much duplicated code
   background-color: var(--fg-color);
 }
 
-/* Coloring fot header line */
+/* Coloring for header line */
 
 .white {
   color: var(--bg-color);
@@ -161,6 +165,73 @@ TODO: media queries need a refactor, too much duplicated code
   color: var(--gray-color);
 }
 
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  background-color: var(--fg-color);
+  transition: width 200ms ease;
+  z-index: 100;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-item.logo img {
+  min-width: 3rem;
+  min-height: 3rem;
+  margin: 0 1rem;
+}
+
+.nav-item.logo span {
+  font-size: x-large;
+  white-space: nowrap;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  color: var(--bg-color);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: var(--fg-color-secondary);
+  transition: 200ms;
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link svg {
+  min-width: 2rem;
+  margin: 0 1.5rem;
+  filter: blur(1);
+}
+
+.nav-link img {
+  margin: 0 1.5rem;
+  max-width: 2rem;
+}
+
 /* Helper classes */
 
 .m-0  { margin: 0; }
@@ -175,3 +246,81 @@ TODO: media queries need a refactor, too much duplicated code
 .p-1  { padding: 1rem; }
 .pt-1 { padding-top: 1rem ; }
 .pb-1 { padding-bottom: 1rem ; }
+
+/* Responsive stuff  */
+
+/* Large screens */
+@media (min-width: 900px) {
+  .section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .section * {
+    grid-column: 2 / 4;
+  }
+
+  .header {
+    flex-direction: row;
+  }
+
+  /* Navbar */
+
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 19rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+}
+
+/* Small screens */
+@media (max-width: 900px) {
+  .section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .section * {
+    grid-column: 1;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  #footer {
+    padding-bottom: 5rem;
+  }
+
+  /* Navbar */
+
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-item.logo {
+    display: none;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  .container {
+    padding: 4rem 1rem 1rem 1rem;
+  }
+}
+
+/* End of responsive stuff */
