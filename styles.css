@@ -40,6 +40,11 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--blue-color);
 }
 
+ul {
+  padding: 0;
+  list-style-position: inside;
+}
+
 .bg-logo {
   width: 30%;
   position: fixed;
