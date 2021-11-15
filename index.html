@@ -21,25 +21,31 @@
       </li>
       <li class="nav-item" title="SVG Files">
         <a href="#svg" class="nav-link">
-          <img src="img/icons/vector-square-solid.svg" alt="">
+          <img src="img/icons/svg-files.svg" alt="Get SVG menu item">
           <span class="link-text">SVG Files</span>
         </a>
       </li>
       <li class="nav-item" title="Materials">
         <a href="#materials" class="nav-link">
-          <img src="img/icons/puzzle-piece-solid.svg" alt="">
+          <img src="img/icons/puzzle-piece.svg" alt="Material menu item">
           <span class="link-text">Materials</span>
         </a>
       </li>
       <li class="nav-item" title="Assembling">
         <a href="#assembling" class="nav-link">
-          <img src="img/icons/hammer-solid.svg" alt="">
+          <img src="img/icons/hammer.svg" alt="Assembling menu item">
           <span class="link-text">Assembling</span>
+        </a>
+      </li>
+      <li class="nav-item" title="Donate">
+        <a href="#donate" class="nav-link">
+          <img src="img/icons/heart-solid.svg" alt="Donations menu item">
+          <span class="link-text">Donate</span>
         </a>
       </li>
       <li class="nav-item" title="FAQ">
         <a href="#faq" class="nav-link">
-          <img src="img/icons/question-circle-solid.svg" alt="">
+          <img src="img/icons/question-symbol.svg" alt="FAQ menu item">
           <span class="link-text">FAQ</span>
         </a>
       </li>
@@ -75,17 +81,34 @@
         Are you also a <i>DIY</i> enthusiastic?
       </p>
       <p>
-        Molly's Joystick is compatible with 6 different devices:
-        <ul class="fewer-padding-bullets">
+        Molly's Joystick is compatible with at least 6 different devices:
+        <ul class="fewer-padding-bullets links">
           <li>Raspberry Pi Zero 1 and 2</li>
           <li>Banana Pi M2 Zero</li>
           <li>Radxa Zero</li>
           <li>2 different SJ@JX USB encoders:
-            <a class="blue" href="javascript:window.open('https://i.postimg.cc/hvCCHBrx/big-usb-encoder.jpg')">This one</a><sup class="orange">1</sup> and
-            <a class="blue" href="javascript:window.open('https://i.postimg.cc/tgtNKbRT/small-usb-encoder.webp')">this one</a></li>
+            <a class="blue" href="javascript:window.open('https://i.postimg.cc/hvCCHBrx/big-usb-encoder.jpg')">This one</a>
+            <sup class="orange">
+              <a class="orange" id="disc-1-return" href="#disc-1">1</a>
+            </sup> and
+            <a class="blue" href="javascript:window.open('https://i.postimg.cc/tgtNKbRT/small-usb-encoder.webp')">
+            this one</a></li>
         </ul>
         <p>So it can be either an all-in-one arcade box or a wired USB joystick.</p>
       </p>
+    </div>
+
+    <div class="section links">
+      <h3>
+        Get the SVG files below, they're free to use
+        <a href="#disc-2" id="disc-2-return">
+          <sup class="orange">2</sup>
+        </a>
+      </h3>
+      <p>Micro</p>
+      <img class="responsive-img" src="img/MICRO.svg" alt="MICRO.svg">
+      <p>Nano</p>
+      <img class="responsive-img" src="img/NANO.svg" alt="NANO.svg">
     </div>
 
     <div class="section">
@@ -118,17 +141,7 @@
         </div>
       </p>
     </div>
-  
-    <div class="section">
-      <a id="svg"></a>
-        <h3>
-          Get the SVG files below, they're free to use <sup class="orange">2</sup>
-        </h3>
-        <p>Micro</p>
-        <img class="responsive-img" src="img/MICRO.svg" alt="MICRO.svg">
-        <p>Nano</p>
-        <img class="responsive-img" src="img/NANO.svg" alt="NANO.svg">
-    </div>
+
 
     <div class="section">
       <a id="materials"></a>
@@ -158,14 +171,31 @@
     <p>This section is still pending</p>
   </div>
 
+  <div class="section" id="donate-section">
+    <a id="donate"></a>
+    <h3>Donate</h3>
+    <p>There a few things we have planned such as:</p>
+    <ul>
+      <li>Buttons-only arrangements</li>
+      <li>OBSF-30 compatible designs</li>
+      <li>Atari-friendly designs (only 1 or 2 buttons)</li>
+      <li>A tool to create your own cutoms designs (for buttons layout and sizing)</li>
+    </ul>
+    <p>
+      And even though they're going to be published sooner or later,
+      donations would certainly speed things up! (especially for prototyping show-off and maybe even some professional photos).
+      If you decide not to donate, that's cool, but we'd appreaciate it if you share this stuff with your buddies!
+      <img src="img/icons/heart-solid.svg" alt="Heart icon from Font Awesome, licensed under CC BY 4.0" width="15" />
+    </p>
+  </div>
+
   <div class="section">
     <h3>Some final notes</h3>
       <ul class="fewer-padding-bullets">
         <li>Plywood may also work, just be carefull when tightening screws</li>
-        <li>This is specifically designed for (either original or copies) JLF TP 8YT Sanwa sticks and 24mm buttons</li>
+        <li>As for now, This is specifically designed for (either original or copies) JLF TP 8YT Sanwa sticks and 24mm buttons</li>
         <li>SVG files use a 0.5mm stroke width, something like 0.05mm may be needed for an actual laser cutting service</li>
-        <li>Sheet sizes are just the recommended (minimum) ones, since that's the actual doc size in the files</li>
-        <li>Round-head screws are recommended</li>
+        <li>Sheet sizes are just the recommended (minimum) ones, since those are the actual document sizes in the files</li>
         <li>While Micro is easier to use on top of a table, Nano may feel better as a handheld controller, play around and see what is best for you!</li>
       </ul>
   </div>
@@ -176,17 +206,18 @@
     <!-- <p class="white">Molly's Joystick logo is also under <a class="green" href="https://creativecommons.org/licenses/by-nc/4.0/">CC 4.0 NC</a>. If you have any questions or feedback please send and email to mollysjoystick@gmail.com</p> -->
     If you have any questions or feedback please reach us at mollysjoystick@gmail.com
     </p>
-    <p class="white">
-    <sup class="orange">1</sup> Compatible with Micro only.<br/>
-    <sup class="orange">2</sup> Both MICRO.svg and NANO.svg files are free to use under <a class="blue" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
-    Icons
-    (
-      <img src="img/icons/vector-square-solid.svg" width="15" alt="Vector square icon" />
-      <img src="img/icons/puzzle-piece-solid.svg" width="15" alt="Puzzle piece icon" />
-      <img src="img/icons/hammer-solid.svg" width="15" alt="Hammer icon" />
-      <img src="img/icons/question-circle-solid.svg" width="15" alt="Question circle icon" />
-      )
-      are licensed under <a class="blue" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and provided by <a class="blue" href="https://fontawesome.com/">Font Awesome</a>.
+    <p class="white links">
+      <a id="disc-1" href="#disc-1-return">
+        <sup class="orange">1</sup>
+      </a>
+      Compatible with Micro only<br/>
+      <a id="disc-2" href="#disc-2-return">
+        <sup class="orange">2</sup>
+      </a>
+      MICRO.svg, NANO.svg and most of the icons in this page are free to use under <a class="blue" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
+      The heart icon
+      <img src="img/icons/heart-solid.svg" alt="Heart icon from Font Awesome, licensed under CC BY 4.0" width="15" />
+      is licensed under <a class="blue" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and provided by <a class="blue" href="https://fontawesome.com/">Font Awesome</a>
     </p>
   </div>
       
