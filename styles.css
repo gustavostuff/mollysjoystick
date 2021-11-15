@@ -40,11 +40,6 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--blue-color);
 }
 
-ul {
-  padding: 0;
-  list-style-position: inside;
-}
-
 .bg-logo {
   width: 30%;
   position: fixed;
@@ -64,6 +59,10 @@ ul {
 
 .no-bullets {
   list-style-type: none;
+}
+
+.fewer-padding-bullets {
+  padding-left: 1.2rem;
 }
 
 .responsive-img {
